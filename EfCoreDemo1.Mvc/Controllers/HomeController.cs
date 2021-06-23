@@ -239,8 +239,8 @@ namespace EfCoreDemo1.Mvc.Controllers
         {
             var data = _context.ProductCategories;
 
-            var data = from productCategory in _context.ProductCategories
-                       select productCategory;
+            //var data = from productCategory in _context.ProductCategories
+            //           select productCategory;
 
             ViewData["Query"] = data.ToQueryString();
 
