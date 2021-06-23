@@ -1,0 +1,50 @@
+﻿
+
+@model IEnumerable<TopProductViewModel>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ListPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalValueSold)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalNumberSold)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ListPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalValueSold)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalNumberSold)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>@ViewData["Query"]</p>

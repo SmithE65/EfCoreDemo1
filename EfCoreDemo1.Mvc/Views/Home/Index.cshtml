@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<ol>
+    <li>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="@nameof(HomeController.SelectStar)">Select * FROM myTable</a>
+    </li>
+    <li>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="@nameof(HomeController.Where)">Select * FROM myTable WHERE xyz</a>
+    </li>
+    <li>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="@nameof(HomeController.SimpleProjection)">Simple Projection</a>
+    </li>
+    <li>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="@nameof(HomeController.FirstOrDefault)">FirstOrDefault</a>
+    </li>
+    <li>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="@nameof(HomeController.Include)">Explicit Include</a>
+    </li>
+    <li>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="@nameof(HomeController.MultiTableProjection)">Include from Projection</a>
+    </li>
+    <li>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="@nameof(HomeController.MultipleIncludes)">Multiple Includes</a>
+    </li>
+    <li>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="@nameof(HomeController.Join)">Joining</a>
+    </li>
+    <li>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="@nameof(HomeController.GroupJoin)">GroupJoin</a>
+    </li>
+    <li>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="@nameof(HomeController.GroupBy)">GroupBy</a>
+    </li>
+    <li>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="@nameof(HomeController.TopTenProductsByValue)">Top 10 products</a>
+    </li>
+    <li>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="@nameof(HomeController.FromSql)">FromSql Calls</a>
+    </li>
+</ol>
